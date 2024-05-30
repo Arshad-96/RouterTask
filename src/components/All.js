@@ -1,67 +1,71 @@
-import "../App.css";
+
+import '../App.css'
+
+
 
 const cardList = [
-  {
-    url: "https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-UX-Designer-Resume-Examples-and-Portfolio-Guide.webp",
-    title: "8 UX Designer Resume Examples and Portfolio Guide",
-    description:
-      "If you’re into designing websites or apps, you know how important it is to create a sample ",
-  },
-  {
-    url: "https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Effective-Ways-to-Learn-UIUX-Design.webp",
-    title: "8 Effective Ways to Learn UI/UX Design [2024]",
-    description:
-      "In the dynamic world where businesses strive to offer exceptional digital experiences",
-  },
-  {
-    url: "https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Competitive-Analysis-in-UI-Design-All-You-Need-To-Know.webp",
-    title: "Conducting Competitive Analysis in UI Design",
-    description:
-      "Have you ever wondered how your app or website compares to others? That’s where competitive",
-  },
-  {
-    url: "https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-How-to-Download-an-Image-from-Figma.webp",
-    title:
-      "How to Download an Image from Figma? A 5-Step Guide to Help You Out",
-    description:
-      "Whenever you work on creative software that works with media elements",
-  },
-  {
-    url: "https://www.guvi.in/blog/wp-content/uploads/2023/12/feature-image-1.webp",
-    title: "10 Important UI/UX Testing Tools For UI/UX Designers",
-    description:
-      "UI/UX is the next gold rush of the tech world and a lot of people",
-  },
-  {
-    url: "https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Top-UIUX-Design-Trends.webp",
-    title: "Top UI/UX Design Trends: Embracing Innovation in 2024",
-    description:
-      "In the fast-paced world of UI/UX design, staying ahead of the curve is crucial",
-  },
-];
+    {
+        url: 'https://www.guvi.in/blog/wp-content/uploads/2023/11/top_product_based_companies_that_don_t_require_coding.webp',
+        title: 'UI/UX Designer Job Description and Roles & Responsibilities',
+        description: 'UI/UX designer job descriptions and roles and responsibilities that can help you understand more about this domain and set your career path straight.'
+    },
+    {
+        url: 'https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Top-IT-Jobs-for-Economics-Students.webp',
+        title: 'Top 5 IT Jobs for Economics Students',
+        description: 'In today’s digital age, the intersection of economics and technology offers exciting career opportunities for students with a background in economics'
+    },
+    {
+        url: 'https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Top-IT-Jobs-for-Commerce-Students.webp',
+        title: 'Top IT Jobs for Commerce Students: A Lucrative Career Path',
+        description: 'The intersection of commerce and technology offers a wide range of job prospects that can provide both financial stability and personal growth.'
+    },
+    {
+        url: 'https://www.guvi.in/blog/wp-content/uploads/2023/12/Feature-image-Automation-Test-Engineer-Resume-Important-Things-To-Consider.webp',
+        title: 'Automation Test Engineer Resume: 10 Important Things To Consider',
+        description: 'The world is moving towards automating the testing of products in order to increase work efficiency'
+    },
+    {
+        url: 'https://www.guvi.in/blog/wp-content/uploads/2023/11/FEATURE-IMAGE-1-3-2048x1072.webp',
+        title: 'Professional Civil Engineer Resume: A Guide To Attract Employers in 2024',
+        description: 'The world is moving towards modernization leading to an increase in the popularity of civil engineering'
+    },
+    {
+        url: 'https://www.guvi.in/blog/wp-content/uploads/2023/11/Featured-Image-2048x1072.webp',
+        title: '9 Best Product-Based Companies for Project Management',
+        description: 'In today’s tech-driven world, the demand for project managers is higher than before.'
+    },
+]
+
 
 const All = () => {
-  return (
-    <div className="d-flex flex-wrap justify-content-center ">
-      {cardList.map((item) => {
-        return (
-          <div className="card mb-0 d-flex flex-wrap justify-content-center align-items-center text-center border-2 m-4 pt-0">
-            <img
-              src={item.url}
-              alt="content not loaded"
-              width="100%"
-              height="200px"
-            />
-            <div className="card-body">
-              <h3 className="card-title">{item.title}</h3>
-              <p className="card-title">{item.description}</p>
-              <button class="btn btn-primary">Read more</button>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
+
+    return (
+        <div className="d-flex flex-wrap ">
+            {cardList.map((item) => {
+                return (
+                  <div className="d-flex flex-wrap justify-content-center ">
+                    {cardList.map((item) => {
+                      return (
+                        <div className="card mb-6 d-flex flex-wrap justify-content-center align-items-center text-center border-2 m-3 p-6">
+                          <img
+                            src={item.url}
+                            alt="content not loaded"
+                            width="100%"
+                            height="200px"
+                          />
+                          <div className="card-body">
+                            <h3 className="card-title">{item.title}</h3>
+                            <p className="card-title">{item.description}</p>
+                            <button class="btn btn-primary">Read more</button>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+            })}
+        </div>
+    )
+}
 
 export default All;

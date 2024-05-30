@@ -1,6 +1,6 @@
 import './App.css';
 import All from './components/All';
-import Career from './components/Career';
+import Career from './components/All';
 import CyberSecurity from './components/CyberSecurity';
 import DataScience from './components/DataScience';
 import FullStackDevelopment from './components/FullStackDevelopment';
