@@ -1,0 +1,43 @@
+.card {
+    width: 350px;
+    height: 300px;
+    margin: 10px;
+    padding-left: 0px;
+}
+
+.card-body {
+    padding: 20px;
+    /* height: 200px */
+    
+}
+
+.card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+.navbar {
+    border-bottom: 2px solid gray;
+}
+
+.navbar a {
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0aaa01;
+    background-color: #f9f9f9;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0aaa01;
+    background-color: #f9f9f9;
+}
